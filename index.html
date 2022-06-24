@@ -7,6 +7,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link REL=StyleSheet HREF="style.css" TYPE="text/css">
     <title>Landing Page</title>
+    
+    <style>
+    #dark-blue {
+    background-color: #1F2937;
+}
+
+
+header {
+    margin-top: 0;
+}
+
+.header {
+    justify-content: space-evenly;
+    display: flex;
+    color: white;
+    
+}
+
+footer {
+    color: white;
+    height: 40px;
+}
+
+.footer {
+    padding: 5px;
+    margin-bottom: 0px;
+    justify-content: center;
+    text-align: center;
+}
+
+#logo {
+    align: left;
+    font-size: 20px;
+}
+
+div#header-links {
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    min-height: 100%;
+    max-width: 100%;
+}
+
+#action {
+background-color: #3882F6;
+color: white;
+/* width: 360px;
+height: 50px;
+    display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 70px;
+font-size: 8px;
+}
+
+#quote { 
+justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#top-middle{
+text-align: center;
+}
+
+
+#quote-text{
+margin: 20px
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.center {
+  padding: 10px;
+  font-family: Roboto;
+}
+
+.image-border {
+  border: 1px solid blue;
+  
+}
+
+img {
+width: 90px;
+height: 50px;
+}
+
+.img{
+width: 90px;
+
+float:left;
+margin-left:2%;
+position:relative;
+}
+img{max-width:100%;}
+
+.img p{ position:absolute;width:100%; bottom:0px; padding:5px 0px; margin:0px}
+
+    </style>
 </head>
 
 <body>
@@ -27,40 +139,68 @@
             lower
             contrast.</p>
         <button>Sign up</button>
-        <img aria-placeholder="placeholder image" alt="placeholder image">
+        <img src="/colors_and_stuff.png" alt="placeholder image">
     </section>
 
 
     <section>
-        <div id="top-middle">
-            <h1>Some random information.</h1>
-            <img aria-placeholder="placeholder image" alt="placeholder image">
-            <p>this is some subtext under an illustration or image</p>
+    
+    
+            <h1 style="padding-bottom: 80px;" id="top-middle">Some random information.</h1>
+            
+             <div class="eldersaac">
+<div style="padding-bottom: 100px;" class="container">
+<div class="img image-border"> 
+<img src="https://images.unsplash.com/photo-1633409361618-c73427e4e206" id="elder" />
+<p>this is some subtext under an illustration or image</p>
+</div> 
+<div class="img image-border"> 
+<img src="https://images.unsplash.com/photo-1633409361618-c73427e4e206" id="elder" />
+<p>this is some subtext under an illustration or image</p>
+</div>
+</div>
+</div>
+            
+            
+            
+<!--  <div>
+<div id="image-border" style="justify-content: space-evenly;
+    display: flex;"> <img src="https://images.unsplash.com/photo-1633409361618-c73427e4e206"> </div>
+<div ><p>this is some subtext under an illustration or image</p></div>
+<br><br>
+<div id="image-border" style="justify-content: space-evenly;
+    display: flex;"> <img src="https://images.unsplash.com/photo-1633409361618-c73427e4e206"> </div>
+<div><div><p>this is some subtext under an illustration or image</p> </div>
+   -->     </div>
+    </section>
+    
+  
+   
+    
 
-            <h1>Some random information.</h1>
-            <img aria-placeholder="placeholder image" alt="placeholder image">
-            <p>this is some subtext under an illustration or image</p>
-
-            <h1>Some random information.</h1>
-            <img aria-placeholder="placeholder image" alt="placeholder image">
-            <p>this is some subtext under an illustration or image</p>
-
-            <h1>Some random information.</h1>
-            <img aria-placeholder="placeholder image" alt="placeholder image">
-            <p>this is some subtext under an illustration or image</p>
+    <section id="quote">
+    <div style="margin-right: 60px; margin-left: 60px">
+        <p id="quote-text" style="padding-top: 50px;">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe
+            people will actually read it. Who knows? All I know is that it looks nice.</p>
+        <p style="height: 70px; text-align: right; font-weight: bold;">-Thor, God of Thunder</p>
         </div>
     </section>
 
-    <section>
-        <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe
-            people will actually read it. Who knows? All I know is that it looks nice.</p>
-        <p>-Thor, God of Thunder</p>
-    </section>
+
 
     <section>
+    <div class="container">
+  <div class="center" id="action">
         <p>Call to action! It's time!</p>
-        <p>Sign up for our product by clicking that button right over there!</p>
+        <p>Sign up for our product by clicking that button right over there!</p> 
+        <div>
+           <button>Sign up</button>
+               </div>
+        </div>
+</div>
     </section>
+    
+    <br><br>
 
     <footer>
         <div class="footer" id="dark-blue">
