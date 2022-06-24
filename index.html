@@ -7,117 +7,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link REL=StyleSheet HREF="style.css" TYPE="text/css">
     <title>Landing Page</title>
-    
+
     <style>
-    #dark-blue {
-    background-color: #1F2937;
-}
+        #dark-blue,
+        #hero-text {
+            background-color: #1F2937;
+        }
 
 
-header {
-    margin-top: 0;
-}
+        header {
+            margin-top: 0;
+        }
 
-.header {
-    justify-content: space-evenly;
-    display: flex;
-    color: white;
-    
-}
+        .header {
+            justify-content: space-evenly;
+            display: flex;
+            color: white;
 
-footer {
-    color: white;
-    height: 40px;
-}
+        }
 
-.footer {
-    padding: 5px;
-    margin-bottom: 0px;
-    justify-content: center;
-    text-align: center;
-}
+        footer {
+            color: white;
+            height: 40px;
+        }
 
-#logo {
-    align: left;
-    font-size: 20px;
-}
+        .footer {
+            padding: 5px;
+            margin-bottom: 0px;
+            justify-content: center;
+            text-align: center;
+        }
 
-div#header-links {
-    display: flex;
-    flex-direction: row;
-}
+        #logo {
+            font-size: 20px;
+            justify-content: left;
+        }
 
-div {
-    min-height: 100%;
-    max-width: 100%;
-}
+        div#header-links {
+            display: flex;
+            flex-direction: row;
+        }
 
-#action {
-background-color: #3882F6;
-color: white;
-/* width: 360px;
+        div {
+
+            max-width: 100%;
+        }
+
+        #action {
+            background-color: #3882F6;
+            color: white;
+            /* width: 360px;
 height: 50px;
     display: flex; */
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    height: 70px;
-font-size: 8px;
-}
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 70px;
+            font-size: 10px;
+        }
 
-#quote { 
-justify-content: center;
-    align-items: center;
-    background-color: #E5E7EB;
-    font-size: 18px;
-    font-style: italic;
-}
+        #quote {
+            justify-content: center;
+            align-items: center;
+            background-color: #E5E7EB;
+            font-size: 25px;
+            font-style: italic;
+        }
 
-#top-middle{
-text-align: center;
-}
+        #top-middle {
+            text-align: center;
+
+        }
 
 
-#quote-text{
-margin: 20px
-}
+        #quote-text {
+            margin: 20px;
+            padding-top: 50px;
+        }
 
-html,
-body {
-    padding: 0;
-    margin: 0;
-}
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Roboto, Arial, Helvetica, sans-serif
+        }
 
-.container {
-  display: flex;
-  justify-content: center;
-}
-.center {
-  padding: 10px;
-  font-family: Roboto;
-}
+        .container {
+            display: flex;
+            justify-content: center;
+        }
 
-.image-border {
-  border: 1px solid blue;
-  
-}
+        .center {
+            padding: 10px;
+            font-family: Roboto;
+        }
 
-img {
-width: 90px;
-height: 50px;
-}
+        .image-border {
+            border: 3px solid blue;
+            border-radius: 25px;
+            padding: 20px;
+            width: 80px;
+            height: 80px;
 
-.img{
-width: 90px;
+        }
 
-float:left;
-margin-left:2%;
-position:relative;
-}
-img{max-width:100%;}
+        img {
+            width: 90px;
+            height: 50px;
+        }
 
-.img p{ position:absolute;width:100%; bottom:0px; padding:5px 0px; margin:0px}
+        .img {
+            width: 90px;
 
+            float: left;
+            margin-left: 2%;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .no-height {
+            min-height: 0 !important;
+        }
+
+        .img p {
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            padding: 5px 0px;
+            margin: 0px
+        }
+
+        #quote div {
+            margin-right: 60px;
+            margin-left: 60px
+        }
+
+        #display-block {
+            display: block !important;
+            white-space: pre-wrap;
+        }
+
+        .product-images {
+            margin-left: 90px;
+        }
+
+        div.product-images {
+            max-width: 800px;
+        }
+
+        p#display-block {
+            max-width: 45%;
+        }
+
+        #hero-text {
+            color: #f9faf8;
+            font-size: 28px;
+            font-weight: bolder;
+            margin-top: -60px;
+        }
     </style>
 </head>
 
@@ -133,37 +183,48 @@ img{max-width:100%;}
         </div>
     </header>
 
-    <section>
-        <h1>This website is awesome</h1>
-        <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is
-            lower
-            contrast.</p>
-        <button>Sign up</button>
-        <img src="/colors_and_stuff.png" alt="placeholder image">
+    <section id="hero-text">
+        <div>
+            <h1>This website is awesome</h1>
+            <p style="font-size: 18px;">
+                This website has some subtext that goes here under the main title.
+                It's a smaller font and the color is lower contrast.</p>
+            <button>Sign up</button>
+        </div>
+        <div>
+            <p style="background: #000000; color: whitesmoke; min-height: 10em; display: table-cell; vertical-align: middle; padding: 20px; width: 200px; height: 150px;"" alt="
+                placeholder image">This is a placeholder for an image</p>
+        </div>
     </section>
 
 
     <section>
-    
-    
-            <h1 style="padding-bottom: 80px;" id="top-middle">Some random information.</h1>
-            
-             <div class="eldersaac">
-<div style="padding-bottom: 100px;" class="container">
-<div class="img image-border"> 
-<img src="https://images.unsplash.com/photo-1633409361618-c73427e4e206" id="elder" />
-<p>this is some subtext under an illustration or image</p>
-</div> 
-<div class="img image-border"> 
-<img src="https://images.unsplash.com/photo-1633409361618-c73427e4e206" id="elder" />
-<p>this is some subtext under an illustration or image</p>
-</div>
-</div>
-</div>
-            
-            
-            
-<!--  <div>
+        <h1 id="top-middle">Some random information.</h1>
+        <div class="product-images" style="display: flex; flex-direction: row;">
+            <div>
+                <div class="no-height image-border">
+                </div>
+                <p id="display-block">this is some subtext under an illustration or image</p>
+            </div>
+            <div>
+                <div class="no-height image-border">
+                </div>
+                <p id="display-block">this is some subtext under an illustration or image</p>
+            </div>
+            <div>
+                <div class="no-height image-border">
+                </div>
+                <p id="display-block">this is some subtext under an illustration or image</p>
+            </div>
+            <div>
+                <div class="no-height image-border">
+                </div>
+                <p id="display-block">this is some subtext under an illustration or image</p>
+            </div>
+        </div>
+
+
+        <!--  <div>
 <div id="image-border" style="justify-content: space-evenly;
     display: flex;"> <img src="https://images.unsplash.com/photo-1633409361618-c73427e4e206"> </div>
 <div ><p>this is some subtext under an illustration or image</p></div>
@@ -171,35 +232,37 @@ img{max-width:100%;}
 <div id="image-border" style="justify-content: space-evenly;
     display: flex;"> <img src="https://images.unsplash.com/photo-1633409361618-c73427e4e206"> </div>
 <div><div><p>this is some subtext under an illustration or image</p> </div>
-   -->     </div>
+   -->
+        </div>
     </section>
-    
-  
-   
-    
+
+
+
+
 
     <section id="quote">
-    <div style="margin-right: 60px; margin-left: 60px">
-        <p id="quote-text" style="padding-top: 50px;">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe
-            people will actually read it. Who knows? All I know is that it looks nice.</p>
-        <p style="height: 70px; text-align: right; font-weight: bold;">-Thor, God of Thunder</p>
+        <div>
+            <p id="quote-text">This is an inspiring quote, or a testimonial from a customer.
+                Maybe it's just filling up space, or maybe
+                people will actually read it. Who knows? All I know is that it looks nice.</p>
+            <p style="height: 70px; text-align: right; font-weight: bold;">-Thor, God of Thunder</p>
         </div>
     </section>
 
 
 
     <section>
-    <div class="container">
-  <div class="center" id="action">
-        <p>Call to action! It's time!</p>
-        <p>Sign up for our product by clicking that button right over there!</p> 
-        <div>
-           <button>Sign up</button>
-               </div>
+        <div class="container">
+            <div class="center" id="action">
+                <p>Call to action! It's time!</p>
+                <p>Sign up for our product by clicking that button right over there!</p>
+                <div>
+                    <button>Sign up</button>
+                </div>
+            </div>
         </div>
-</div>
     </section>
-    
+
     <br><br>
 
     <footer>
