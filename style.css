@@ -32,7 +32,8 @@ footer {
     flex-direction: row;
     font-size: smaller;
     color: #E5E7EB;
-    margin-right: 10px;
+    margin-right: 130px;
+    margin-left: -120px;
 }
 
 #header-links {
@@ -45,14 +46,40 @@ div {
     max-width: 100%;
 }
 
+#product-sign-up-button {
+    font-weight: 600;
+    color: white;
+    margin-right: 240px;
+    float: right;
+    background-color: #3882F6;
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 100px;
+    height: 32px;
+    border-color: white;
+    margin-top: -30px;
+}
+
 #action {
     background-color: #3882F6;
     color: white;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 70%;
     height: 70px;
-    font-size: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial;
+    border-radius: 10px;
+}
+
+#action-text {
+    margin-left: 120px;
+}
+
+#sign-up-text {
+    font-weight: 100;
+    margin-left: 120px;
 }
 
 #quote {
@@ -69,8 +96,13 @@ div {
 
 
 #quote-text {
+    /* margin-left: 120px !important; */
+    width: 610px;
+    padding-left: 200px;
     margin: 20px;
     padding-top: 50px;
+    margin-left: 120px;
+
 }
 
 html,
@@ -78,6 +110,12 @@ body {
     padding: 0;
     margin: 0;
     font-family: Roboto, Arial, Helvetica, sans-serif
+}
+
+#thor-quote {
+    margin-left: 630px;
+    height: 70px;
+    font-weight: bold;
 }
 
 .container {
@@ -102,6 +140,7 @@ body {
 img {
     width: 90px;
     height: 50px;
+    max-width: 100%;
 }
 
 .img {
@@ -109,10 +148,6 @@ img {
     float: left;
     margin-left: 2%;
     position: relative;
-}
-
-img {
-    max-width: 100%;
 }
 
 .no-height {
@@ -125,10 +160,10 @@ img {
     color: whitesmoke;
     width: 400px;
     height: 200px;
-    margin-left: 80px;
+    margin-left: 50px;
     margin-right: 100px;
     margin-bottom: 80px;
-    margin-top: 40px;
+    margin-top: 115px;
     padding-left: -50px;
     padding-right: 50px;
 }
@@ -167,7 +202,15 @@ div.product-images {
 }
 
 p#display-block {
-    max-width: 45%;
+    max-width: 71%;
+}
+
+section #top-middle {
+    padding-right: 250px;
+}
+
+#images {
+    padding-left: 200px;
 }
 
 #hero-text {
@@ -210,10 +253,10 @@ h2 {
 }
 
 #main-title p {
-
     margin-bottom: 0;
-    width: 500px;
+    width: 470px;
     font-size: 18px;
-    color: gray;
+    color: #b5b7bb;
+    font-weight: 50;
 
 }
